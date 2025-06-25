@@ -16,8 +16,12 @@
     align-items: flex-start;
     width: 100%;
   }
+    .topbar,.logo img{
+    /*width: 43px;*/
+    margin-left: 0px; 
+}
     .topbar .left-nav input{
-        width: 42vw;
+        width: 37vw;
     }
     .topbar .middle-nav{
         display: none;
@@ -54,6 +58,9 @@
     }
     .spotify-playlists .list {
       gap: 20px;
+        width: 400px;
+      overflow-x: scroll;
+      scrollbar-width: none;
     }
   .footer .social-icons {
     justify-content: center;
