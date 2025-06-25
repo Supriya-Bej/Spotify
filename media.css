@@ -58,7 +58,7 @@
     }
     .spotify-playlists .list {
       gap: 20px;
-        width: 420px;
+        width: 435px;
       overflow-x: scroll;
       scrollbar-width: none;
     }
