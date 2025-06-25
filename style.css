@@ -110,9 +110,9 @@ form .right-fa{
 
 /*Sidebar*/
 .main-container{
-    margin-left: 250px;
-    margin-bottom: 100px;
-    width: 100%;
+    margin-left: max(250px, 25%);
+    /* margin-bottom: 100px; */
+    width: auto;
 }
 .sidebar{
     position: fixed;
@@ -120,7 +120,7 @@ form .right-fa{
     top: 0;
     margin-top: 90px;
     bottom: 0;
-    width: 33%;
+    width: max(10vw, 23vw);
     background-color:#121212;
     padding: 24px;
     border-radius: 10px;
@@ -132,21 +132,25 @@ form .right-fa{
     display: flex;
     background-color: #333131;
     border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 .sidebar-up .library h3{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-weight: bold;
     font-size: 16px;
 }
-.sidebar-up .library span{
+/* .sidebar-up .library span{
     margin-left: 15vw;
     margin-top: 17px;
-}
+} */
 .create-playlist{
     overflow-y: auto;
     scrollbar-width: none;
-    height: 15vw;
+    /* height: 15vw; */
     margin-top: 20px;
+    /* width: 90%; */
 }
 .sidebar-up .create-playlist .box1{
     text-decoration: none;
@@ -157,7 +161,8 @@ form .right-fa{
     margin-left: 10px;
 }
 .box1{
-    width: 31vw;
+    /* width: 20vw; */
+    /* padding: 1px; */
 }
 .box1 button{
     margin-top: 17px;
@@ -200,13 +205,13 @@ form .right-fa{
 .spotify-playlists{
     display: flex;
     flex-direction: column;
-    width:65%;;
+    width: 100%;
+    max-width: 1200px;
     background-color:#121212;
     padding: 24px;
     margin-top: 16px;
-    margin-left: 14vw;
+    margin-left: 0;
     border-radius: 10px;
-    
 }
 
 .body-part{
@@ -226,7 +231,8 @@ form .right-fa{
 }
 .spotify-playlists .list .item{
     min-width: 140px;
-    width: 100px;
+    width: calc(33.333% - 20px);
+    max-width: 200px;
     padding: 15px;
     background-color: #181818;
     border-radius: 6px;
