@@ -1,0 +1,62 @@
+@media only screen and (min-width:200px) and (max-width:575px) {
+    .topbar .left-nav{
+        flex-direction: row;
+        gap: 15px;
+        position: sticky;
+    }
+    .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1000;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+    .topbar .left-nav input{
+        width: 42vw;
+    }
+    .topbar .middle-nav{
+        display: none;
+    }
+    .topbar .install{
+       display: none;
+    }
+    .topbar .right-nav{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(118, 108, 108);      
+        justify-content: center;
+        bottom: 0px;
+        padding:20px;
+        left: 0px;
+    }
+    .topbar .right-nav button{
+        border: none;
+    }
+    .sidebar{
+        display: none;
+    }
+
+    
+    .main-container {
+      margin-left: 0;
+      margin-top: 70px;
+    }
+  
+    .spotify-playlists {
+      width: 100%;
+      margin-left: 0;
+      padding: 16px;
+    }
+    .spotify-playlists .list {
+      gap: 20px;
+    }
+  .footer .social-icons {
+    justify-content: center;
+  }
+    
+}

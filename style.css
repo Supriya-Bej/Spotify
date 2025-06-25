@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+/*Topbar*/
+.topbar{
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+.topbar .left-nav{
+    display: flex;
+    gap: 20px;
+}
+.logo img{
+    width: 43px;
+}
+.topbar,.logo img{
+    /*width: 43px;*/
+    margin-left: 5px;
+}
+.left-nav a span{
+    padding: 15px;
+    background-color: #666a67;
+    border-radius: 100%;
+    margin-left: 1vw;
+}
+form{
+    flex-grow: 1;
+    background-color:#333131;
+    border: 1px solid #f4f4f4;
+    display: flex;
+    border-radius: 15px;
+    height: 40px;
+    margin-left: 3vw;
+}
+form input{
+    background-color:#333131;
+    border: none;
+    width: 20vw;
+}
+form input:focus{
+    outline: none;
+}
+form i{
+    padding: 14px;
+    border:none;
+    color: white;
+}
+form .right-fa{
+    border-left: 2px solid #878383;
+    height: 4px;
+    font-weight: bold;
+}
+
+/*Middle nav*/
+.topbar .middle-nav{
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 5vw;
+}
+.topbar .middle-nav a{
+    text-decoration: none;
+}
+.topbar .install{
+    display: flex;
+    gap: 5px;
+    color: white;
+    margin-top: 10px;
+    width: 35px;
+    height: 10px;
+    cursor: pointer;
+}
+.topbar .right-nav{
+    display: flex;
+    align-items: center;
+}
+.topbar .right-nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 29px;
+}
+.topbar .right-nav a:hover{
+    color: #b3b3b3;
+}
+.right-nav button{
+    padding: 9px 28px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-left: 50px;
+}
+.topbar .right-nav button:hover{
+    background-color: #b3b3b3;
+}
+
+/*Sidebar*/
+.main-container{
+    margin-left: 250px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 90px;
+    bottom: 0;
+    width: 33%;
+    background-color:#121212;
+    padding: 24px;
+    border-radius: 10px;
+}
+.sidebar-up{
+    color: white;
+}
+.sidebar-up .library{
+    display: flex;
+    background-color: #333131;
+    border-radius: 10px;
+}
+.sidebar-up .library h3{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sidebar-up .library span{
+    margin-left: 15vw;
+    margin-top: 17px;
+}
+.create-playlist{
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: 15vw;
+    margin-top: 20px;
+}
+.sidebar-up .create-playlist .box1{
+    text-decoration: none;
+    background-color: #333131;
+    border-radius: 10px;
+}
+.box1 h2,p,button {
+    margin-left: 10px;
+}
+.box1{
+    width: 31vw;
+}
+.box1 button{
+    margin-top: 17px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-down .list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 29px;
+    color: rgb(215, 210, 210);
+}
+.sidebar .sidebar-down a{
+    text-decoration: none;
+    padding-left: 16px;
+}
+.sidebar .sidebar-down .cookies{
+    color: white;
+    margin-top: 20px;
+}
+.sidebar .sidebar-down .cookies:hover{
+    color: #b3aeae;
+    text-decoration: underline;
+}
+.sidebar-down .language button{
+    margin-top: 35px;
+    color: white;
+    background-color:#121212;
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid rgb(216, 209, 209);
+}
+
+
+/*Spotify-Playlist*/
+.spotify-playlists{
+    display: flex;
+    flex-direction: column;
+    width:65%;;
+    background-color:#121212;
+    padding: 24px;
+    margin-top: 16px;
+    margin-left: 14vw;
+    border-radius: 10px;
+    
+}
+
+.body-part{
+    display: flex;
+    flex-direction: column;
+}
+.spotify-playlists h3{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.spotify-playlists .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-playlists .list .item{
+    min-width: 140px;
+    width: 100px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover{
+    background-color: #252525;
+}
+.spotify-playlists .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    /*margin-bottom: 6px;*/
+}
+.spotify-playlists .list .item .play{
+    position: relative;
+}
+.spotify-playlists .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 15px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+.spotify-playlists .list .item p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: 500;
+}
+ hr{
+    margin: 70px 0px 0px;
+    border-color: #636363;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 10px 0px;
+  background-color: #121212;
+  color: #b3b3b3;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.footer .company,
+.footer .communities,
+.footer .useful-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-icons span {
+  color: white;
+  cursor: pointer;
+   height: 35px;
+   padding: 10px;
+   background-color: #666a67;
+   border-radius: 100%;
+   font-size: large;
+   justify-content: center;
+    
+}
+
+.footer .social-icons span:hover {
+  color: #1db954;
+}
+
