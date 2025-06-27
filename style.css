@@ -230,7 +230,7 @@ form .right-fa{
     overflow: hidden;
 }
 .spotify-playlists .list .item{
-    min-width: 140px;
+    min-width: 180px;
     width: calc(33.333% - 20px);
     max-width: 200px;
     padding: 15px;
